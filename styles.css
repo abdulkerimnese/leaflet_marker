@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  width: 100vw;
+  height: 100%;
+}
+
+.main-container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+#map-prop{
+  width: 90vw;
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#right-side{
+  display: flex;
+  height: 100%;
+  width: 10vw;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ddd;
+}
+
+#button-properties{
+  display: flex;
+  width: 8vw;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: white;
+}
+
+#add-location-btn, #export-btn, #save-btn {
+  width: 105px;
+  height: 38px;
+  font-size: 15px;
+  color: white;
+  background: #4CAF50;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+
+#info-form {
+  position: relative;
+  width: 18vw;
+  background-color: white;
+}
+
+#location-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type= "text"] {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin-top: 10px;
+}
+
+
+
+/* #map {
+  width: 70vw;
+  height: 100%;
+}
+
+#info-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 10px;
+  top: 10px;
+  right: 10px;
+  width: 250px;
+  background-color: white;
+  padding: 10px;
+  z-index: 1000;
+} */
+
+/* .hidden {
+  display: none;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#export-btn {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  z-index: 1000;
+} */

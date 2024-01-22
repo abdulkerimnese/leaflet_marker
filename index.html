@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <title>Leaflet Harita Uygulaması</title>
+</head>
+<body>
+
+
+  <div class="main-container">
+    <div id="map-prop">
+      <div id="map"></div>
+    </div>
+    <div id="right-side">
+      <div id="button-properties">
+        <button id="add-location-btn">İşaret Ekle</button>
+        <div id="info-form" class="hidden">
+          <h2>Bilgi Formu</h2>
+          <form id="location-form">
+            <input type="text" id="name" required placeholder="Ad">
+            <input type="text" id="surname" required placeholder="Soyad">
+            <input type="text" id="company" required placeholder="Firma">
+            <input type="text" id="document-type" required placeholder="Evrak Tipi">
+            <input type="text" id="stock" required placeholder="Stok">
+            <input type="text" id="exit" required placeholder="Çıkış">
+            <input type="text" id="unit" required placeholder="Birim">
+            <input type="date" id="date" required placeholder="Tarih">
+            <input type="text" id="coordinates" required readonly>
+            <button type="button" id="save-btn">Kaydet</button>
+          </form>
+        </div>
+        <button id="export-btn">Excel'e Aktar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.17.5/dist/xlsx.full.min.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
